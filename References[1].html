@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+body {
+  font-family: "Lato", sans-serif;
+}
+.sidebar  {
+
+
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: 	#696969;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn {
+
+  margin-top:20px;
+  font-size: 20px;
+  cursor: pointer;
+  background-color: 	#D3D3D3;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  float:left;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+
+ .header {
+
+
+            font-size: large;
+
+              margin-top:0px;
+            text-align: center;
+            color: #e8e8e8;
+            background-color: #00BFFF;
+            position: relative;
+            background-position: relative;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+
+        .main {
+            flex: 70%;
+            background-color: #BC8F8F;
+            padding: 3px;
+        }
+
+
+
+         #new {
+            padding: 30px;
+            height: auto;
+            width: auto;
+            margin-right: auto;
+            margin-left: auto;
+            background-color: white;
+            font-size: 20px;
+            color: #696969;
+
+        }
+
+ .footer {
+            padding: 10px;
+            text-align: center;
+            background: #00BFFF ;
+            color: 	#F5F5F5;
+            width: auto;
+        }
+</style>
+</head>
+<body>
+
+
+<div id="head" class="header">
+
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <a href="index.html">Home</a>
+        <a href="3D.html">3D Modelling</a>
+        <a href="Program.html">Programs</a>
+        <a href="Model.html">Model</a>
+        <a href="About.html">About</a>
+        <a href="References.html">References</a>
+    </div>
+
+    <div id="main">
+        <button class="openbtn" onclick="openNav()">☰ </button>
+        <h1> 3D Modelling</h1>
+    </div>
+
+</div>
+
+
+<div class="main">
+
+
+    <div id="new">
+
+
+        <h3>REFERENCES</h3>
+        <p> 1 - What is 3D Modeling & What’s It Used For?. https://conceptartempire.com/what-is-3d-modeling/</p>
+        <p> 2 - Autodesk 3ds Max. https://www.autodesk.com/  </p>
+        <p> 3 - Sketchup. https://www.sketchup.com/ </p>
+        <p> 4 - CorelDraw. https://www.coreldraw.com/en/</p>
+        <p> 5 - Blender. https://www.blender.org/</p>
+        <p> 6 - Autocad. https://www.autodesk.com/products/<br>autocad/</p>
+        <p> 7 - https://staff.emu.edu.tr/birolozkaya</br>
+            /en/teaching/itec450</p>
+        <p> 8 - https://www.google.com/search?q=</br>
+            3d+shapes+gif+image&source=lnms&tbm=</br>
+            isch&sa=X&ved=0ahUKEwjd95yN3OviAhVg</br>
+            DGMBHe10DHAQ_AUIECgB&biw=1920&bih=</br>
+            969#imgdii=F_FjxBLYwMinJM:&imgrc=</br>
+            Ln9Xa7_Vv8x4DM:</p>
+        <br>
+
+    </div>
+
+
+</div>
+
+
+
+<div class="footer">
+    <p>Contact Information</p>
+    <p>&copy; melekkarabas96@gmail.com </p>
+    <img src="img/social.png" width="55" height="40">
+    </br>
+
+    <button type="button" style="background-color:#D3D3D3;"><a href="help.html" style="color:#696969">Help</a></button>
+
+</div>
+
+<script>
+function openNav() {
+  document.getElementById("mySidebar").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+</script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
